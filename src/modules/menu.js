@@ -1,4 +1,10 @@
 import '../../node_modules/animate.css/animate.css'
+import Image1 from '../img/mae-mu-I7A_pHLcQK8-unsplash.jpg'
+import Image2 from '../img/sameer-waskar-KojQfg8UdCE-unsplash.jpg'
+import Image3 from '../img/amirali-mirhashemian-Tqr2yaJvksM-unsplash.jpg'
+import Image4 from '../img/louis-hansel-shotsoflouis-vi0kZuoe0-8-unsplash.jpg'
+import Image5 from '../img/alexander-mils-wBIeri0fLuw-unsplash.jpg'
+
 function makeMenuPage () {
     const content = document.querySelector('div#content')
     if (!content.querySelector('#textContainer')){
@@ -17,11 +23,11 @@ function makeMenuPage () {
         container.appendChild(title);
 
         const foods = [
-            {name:'Signiture Beef Burger', image:'mae-mu-I7A_pHLcQK8-unsplash.jpg'}, 
-            {name:'Chicken Burger', image:'sameer-waskar-KojQfg8UdCE-unsplash.jpg'}, 
-            {name:'Veggie Burger', image:'amirali-mirhashemian-Tqr2yaJvksM-unsplash.jpg'}, 
-            {name:'French Fries', image:"louis-hansel-shotsoflouis-vi0kZuoe0-8-unsplash.jpg"},
-            {name:'Fruit Smoothies', image:"alexander-mils-wBIeri0fLuw-unsplash.jpg"}
+            {name:'Signiture Beef Burger', image: Image1}, 
+            {name:'Chicken Burger', image: Image2}, 
+            {name:'Veggie Burger', image: Image3}, 
+            {name:'French Fries', image: Image4},
+            {name:'Fruit Smoothies', image: Image5}
         ]
 
         //creat and add food names and respective imgs to menu container
@@ -34,7 +40,7 @@ function makeMenuPage () {
             foodTitle.classList.add('foodList')
 
             foodImg = document.createElement('img')
-            foodImg.src= `../img/${foods[i].image}`
+            foodImg.src=foods[i].image
             
             foodCard.appendChild(foodTitle)
             foodCard.appendChild(foodImg)
