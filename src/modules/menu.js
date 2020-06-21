@@ -34,7 +34,7 @@ function makeMenuPage () {
             foodTitle.classList.add('foodList')
 
             foodImg = document.createElement('img')
-            foodImg.src= `../src/img/${foods[i].image}`
+            foodImg.src= `../img/${foods[i].image}`
             
             foodCard.appendChild(foodTitle)
             foodCard.appendChild(foodImg)
